@@ -3,7 +3,7 @@ import author from "../me.jpeg";
 
 const AboutMe = () => {
   return (
-    <div className="container py-5">
+    <div id="about" className="container py-5">
       <div className="row">
         <div className="col-lg-6 col-xm-12">
           <div className="photo-wrap mb-5">
@@ -12,7 +12,13 @@ const AboutMe = () => {
         </div>
         <div className="col-lg-6 col-xm-12">
           <h1 className="about-heading">about me</h1>
-          <p>Hello, my name is Rafael Rosas and I love to code.</p>
+          <p>
+            Hello, my name is Rafael Rosas and I am a web developer based out of
+            Chicago. The technologies I use are the MERN stack (MongoDB,
+            Express, ReactJS, and NodeJS). My hobbies include cooking mexican
+            cuisine and trying new restaurants with friends and family. I also
+            enjoy walking around the beautiful city that I get to call home.
+          </p>
         </div>
       </div>
     </div>

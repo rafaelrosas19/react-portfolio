@@ -22,9 +22,9 @@ body {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.my-name {
+  color: var(--primary-white);
+  font-family: "Roboto Condensed", sans-serif !important;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -91,18 +91,20 @@ nav ul li {
 }
 
 .navbar-nav > li > a.active,
-.navbar-nav > li > a.active:focus {
+.navbar-nav > li > a:focus {
   border-top: 0.1875rem solid var(--primary-orange);
 }
 .navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--primary-orange);
 }
+/* -------------------- Header -------------------------- */
+
 .header-wrapper {
   position: relative;
-  background: url(background.jpg) no-repeat;
+  background: url(chicago.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
 }
 .main-info {
   display: flex;
@@ -118,7 +120,8 @@ nav ul li {
   z-index: 1;
 }
 .main-info h1 {
-  color: var(--primary-orange);
+  color: var(--primary-white);
+  background-color: var(--primary-red);
   text-transform: uppercase;
 }
 
@@ -139,12 +142,13 @@ nav ul li {
 
 /* -------------------- Header Main Offer Button -------------------------- */
 .btn-main-offer {
-  border: 1px solid var(--primary-red);
+  border: 2px solid var(--primary-white);
   text-transform: uppercase;
   border-radius: 0;
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
   color: var(--primary-white);
   margin: 2rem;
+  background-color: var(--primary-black);
 }
 
 .btn-main-offer:hover {
@@ -344,4 +348,117 @@ nav ul li {
   .portfolio-image-popupbox {
     width: 30%;
   }
+}
+
+/* ---------------------------- Contacts Component ---------------------------------*/
+
+.contacts {
+  background: var(--primary-dark);
+  padding: 3rem 0;
+}
+
+.contacts h1 {
+  color: var(--primary-orange);
+  padding: 1.3rem 0;
+  text-transform: uppercase;
+}
+
+.contacts p {
+  color: var(--primary-light-grey);
+  font-size: 1.2rem;
+}
+
+/* ---------------------------- Inputs ---------------------------------*/
+
+.contacts input,
+.contacts textarea {
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize: none;
+  border: 0;
+  border-bottom: 0.125rem solid var(--primary-dark-grey);
+  border-radius: 0;
+  color: var(--primary-orange);
+  outline: 0 !important;
+  box-shadow: none !important;
+  margin-bottom: 1rem;
+  padding-left: 0 !important;
+}
+
+.contacts .container {
+  padding: 4rem 0;
+}
+
+.contacts input:focus,
+.contacts textarea:focus {
+  background: transparent;
+  color: var(--primary-orange);
+  border-bottom: 0.125rem solid var(--primary-dark-grey);
+}
+
+.contacts textarea {
+  height: 12.2rem !important;
+}
+
+.contact-btn {
+  margin: 1rem 0 0 0;
+  width: 100%;
+  background: none;
+}
+
+.line {
+  position: relative;
+  top: -0.8rem;
+  width: 0;
+  height: 0.125rem;
+  background: var(--primary-orange);
+  display: inline-block;
+}
+
+input:focus + .line,
+textarea:focus + .line {
+  width: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+input.form-control {
+  margin: -0.3rem 0;
+}
+
+textarea.form-control {
+  margin: -0.3rem 0;
+}
+
+.error-message {
+  color: var(--primary-white);
+  background: var(--primary-hover-red);
+  text-align: left;
+}
+
+.success-message {
+  font-weight: 900;
+  color: var(--primary-green);
+}
+
+/* ---------------------------- Footer ---------------------------------*/
+.footer {
+  background: var(--primary-black);
+  color: var(--primary-dark-grey);
+  padding: 3rem;
+}
+
+.footer a {
+  text-decoration: none;
+  color: var(--primary-dark-grey);
+}
+
+.footer a:hover {
+  text-decoration: none;
+  color: var(--primary-orange);
+  cursor: pointer;
+}
+
+.footer p {
+  margin-bottom: 0;
 }
