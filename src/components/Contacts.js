@@ -131,7 +131,7 @@ const Contacts = () => {
                 <textarea
                   type="text"
                   className="form-control"
-                  placeholder="Please describe shortly you project..."
+                  placeholder="Please write a description..."
                   name="description"
                   ref={register({
                     required: "Please describe shortly your project needs...",
