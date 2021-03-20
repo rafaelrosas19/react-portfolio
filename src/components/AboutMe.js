@@ -19,6 +19,21 @@ const AboutMe = () => {
             cuisine and trying new restaurants with friends and family. I also
             enjoy walking around the beautiful city that I get to call home.
           </p>
+          <a
+            className="hyper-link"
+            href="https://www.linkedin.com/in/rafael-rosas/"
+            target="_blank"
+          >
+            LinkedIn
+          </a>
+          <br></br>
+          <a
+            className="hyper-link"
+            href="https://github.com/rafaelrosas19"
+            target="_blank"
+          >
+            GitHub
+          </a>
         </div>
       </div>
     </div>
