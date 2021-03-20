@@ -273,8 +273,7 @@ nav ul li {
   margin: 1rem;
 }
 
-/* ---------------------------- Overflow Box ---------------------------------*/
-
+/*------------ OVERFLOW BOX ------------------*/
 .overflow {
   position: absolute;
   opacity: 0;
@@ -310,10 +309,14 @@ nav ul li {
   margin-top: 7rem;
 }
 
-/* ---------------------------- Overflow Box ---------------------------------*/
+/*------------ OVERFLOW BOX ------------------*/
 .portfolio-image-popupbox {
-  width: 45rem;
-  padding: 0 0.5rem;
+  width: 40rem;
+  padding: 2 4rem;
+}
+
+#description {
+  padding-top: 2rem;
 }
 
 .hyper-link {
@@ -325,7 +328,7 @@ nav ul li {
   color: var(--primary-red);
 }
 
-/* ---------------------------- Media ---------------------------------*/
+/*------------ MEDIA ------------------*/
 @media (max-width: 768px) {
   .portfolio-image-popupbox {
     width: 100%;
