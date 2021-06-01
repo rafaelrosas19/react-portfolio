@@ -34,6 +34,14 @@ const AboutMe = () => {
           >
             GitHub
           </a>
+          <br></br>
+          <a
+            className="hyper-link"
+            href="https://drive.google.com/file/d/1IrIG_2Y4WU_kVZHp7msk3kFh-xGJFNZy/view?usp=sharing"
+            target="_blank"
+          >
+            Resume
+          </a>
         </div>
       </div>
     </div>
